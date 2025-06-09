@@ -17,4 +17,6 @@ class LanguageRepository {
     final doc = await _firestore.collection('settings').doc('language').get();
     return (doc.exists == true) ? (doc.data()?['code'] ?? 'en') : 'en';
   }
+
+  
 }

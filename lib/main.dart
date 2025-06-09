@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:multilinguilal/l10n/blocs/language/language_event.dart';
-import 'package:multilinguilal/l10n/blocs/language/language_state.dart';
-import 'package:multilinguilal/l10n/blocs/language/languate_bloc.dart';
-import 'package:multilinguilal/l10n/data/repositories/language_repository.dart';
-import 'package:multilinguilal/l10n/ui/screens/home_screen.dart';
+import 'package:multilinguilal/blocs/language/language_event.dart';
+import 'package:multilinguilal/blocs/language/language_state.dart';
+import 'package:multilinguilal/blocs/language/languate_bloc.dart';
+import 'package:multilinguilal/data/repositories/language_repository.dart';
+import 'package:multilinguilal/ui/screens/home_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
    await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

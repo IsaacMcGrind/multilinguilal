@@ -1,13 +1,25 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:multilinguilal/l10n/blocs/language/language_event.dart';
-import 'package:multilinguilal/l10n/blocs/language/language_state.dart';
-import 'package:multilinguilal/l10n/blocs/language/languate_bloc.dart';
-import 'package:multilinguilal/l10n/data/models/language.dart';
+import 'package:multilinguilal/blocs/language/language_event.dart';
+import 'package:multilinguilal/blocs/language/language_state.dart';
+import 'package:multilinguilal/blocs/language/languate_bloc.dart';
+import 'package:multilinguilal/data/models/language.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    testWriteToFirestore();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,4 +55,12 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+
+  void testWriteToFirestore() async {
+    await FirebaseFirestore.instance.collection('settings').doc('test').set({
+      'status': 'working',
+      'timestamp': FieldValue.serverTimestamp(),
+    });
+  }
 }
+

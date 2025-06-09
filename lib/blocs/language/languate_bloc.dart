@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:multilinguilal/l10n/blocs/language/language_event.dart';
-import 'package:multilinguilal/l10n/blocs/language/language_state.dart';
-import 'package:multilinguilal/l10n/data/repositories/language_repository.dart';
+import 'package:multilinguilal/blocs/language/language_event.dart';
+import 'package:multilinguilal/blocs/language/language_state.dart';
+import 'package:multilinguilal/data/repositories/language_repository.dart';
 
 class LanguageBloc extends Bloc<LanguageEvent, LanguageState> {
   final LanguageRepository repository;
