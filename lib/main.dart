@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,13 +13,26 @@ import 'package:multilinguilal/ui/screens/home_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
-   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  
-  runApp(const MyApp());
+ // Make zone errors fatal during development
+  //BindingBase.debugZoneErrorsAreFatal = true;
+
+  // Wrap everything in a zone
+  runZonedGuarded(() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    
+    try {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+    } catch (e) {
+      debugPrint('Firebase initialization error: $e');
+    }
+    
+    runApp(const MyApp());
+  }, (error, stack) {
+    debugPrint('Error in zone: $error');
+    debugPrint('Stack trace: $stack');
+  });
 }
 
 class MyApp extends StatelessWidget {
@@ -34,6 +49,7 @@ class MyApp extends StatelessWidget {
         child: BlocBuilder<LanguageBloc, LanguageState>(
           builder: (context, state) {
             return MaterialApp(
+              debugShowCheckedModeBanner: false,
               title: 'Multilingual Demo',
               locale: state is LanguageLoaded 
                   ? Locale(state.languageCode)
