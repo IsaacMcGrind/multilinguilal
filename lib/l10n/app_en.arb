@@ -1,4 +1,5 @@
 {
+  "@@locale": "en",
   "title": "Multilingual App",
   "greeting": "Hello!",
   "changeLanguage": "Change Language"

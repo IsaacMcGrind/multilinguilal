@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "275288813880",
+    "project_id": "ndfire-4ea00",
+    "storage_bucket": "ndfire-4ea00.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275288813880:android:43d55d03c9a9142c6751cd",
+        "android_client_info": {
+          "package_name": "com.example.multilinguilal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh7A4re_ZPW-BUsDt9lyd45PG985Hrk3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
