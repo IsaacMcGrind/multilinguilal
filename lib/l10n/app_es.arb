@@ -1,6 +1,9 @@
 {
   "@@locale": "es",
   "title": "Aplicación Multilingüe",
+  "@title": {},
   "greeting": "¡Hola!",
-  "changeLanguage": "Cambiar idioma"
+  "@greeting": {},
+  "changeLanguage": "Cambiar idioma",
+  "@changeLanguage": {}
 }

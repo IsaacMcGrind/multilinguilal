@@ -1,6 +1,9 @@
 {
   "@@locale": "en",
   "title": "Multilingual App",
+  "@title": {},
   "greeting": "Hello!",
-  "changeLanguage": "Change Language"
+  "@greeting": {},
+  "changeLanguage": "Change Language",
+  "@changeLanguage": {}
 }
