@@ -1,0 +1,9 @@
+{
+  "@@locale": "ja",
+  "title": "多言語アプリ",
+  "@title": {},
+  "greeting": "こんにちは！",
+  "@greeting": {},
+  "changeLanguage": "言語を変更",
+  "@changeLanguage": {}
+}

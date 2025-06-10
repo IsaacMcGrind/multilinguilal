@@ -1,0 +1,9 @@
+{
+  "@@locale": "zh",
+  "title": "多语言应用程序",
+  "@title": {},
+  "greeting": "你好！",
+  "@greeting": {},
+  "changeLanguage": "更改语言",
+  "@changeLanguage": {}
+}

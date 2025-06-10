@@ -1,0 +1,9 @@
+{
+  "@@locale": "pt",
+  "title": "Aplicativo Multilíngue",
+  "@title": {},
+  "greeting": "Olá!",
+  "@greeting": {},
+  "changeLanguage": "Mudar idioma",
+  "@changeLanguage": {}
+}

@@ -1,0 +1,9 @@
+{
+  "@@locale": "ar",
+  "title": "تطبيق متعدد اللغات",
+  "@title": {},
+  "greeting": "مرحبًا!",
+  "@greeting": {},
+  "changeLanguage": "تغيير اللغة",
+  "@changeLanguage": {}
+}

@@ -1,0 +1,9 @@
+{
+  "@@locale": "hi",
+  "title": "बहुभाषी ऐप",
+  "@title": {},
+  "greeting": "नमस्ते!",
+  "@greeting": {},
+  "changeLanguage": "भाषा बदलें",
+  "@changeLanguage": {}
+}

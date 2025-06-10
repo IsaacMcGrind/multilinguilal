@@ -1,0 +1,9 @@
+{
+  "@@locale": "ru",
+  "title": "Многоязычное приложение",
+  "@title": {},
+  "greeting": "Здравствуйте!",
+  "@greeting": {},
+  "changeLanguage": "Сменить язык",
+  "@changeLanguage": {}
+}
